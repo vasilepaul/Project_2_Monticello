@@ -1,0 +1,520 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+header {
+  background-image: /* linear-gradient(243deg, #7e5aff 16.9%, #55b7ff 83.27%), */ url(/images/header_background.png);
+  background-color: rgb(46, 151, 226);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1064px;
+}
+#header_menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+#header_logo {
+  width: 15.0625rem;
+  height: 3.375rem;
+}
+.menu_list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 70px;
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+}
+#menu_social {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+ul {
+  list-style: circle;
+}
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  stroke-width: 1px;
+  stroke: #fff;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.icon_facebook {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  margin-top: 300px;
+}
+h1 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  margin-bottom: 20px;
+}
+.subtitle {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.3375rem;
+}
+.conteiner_arrow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin-top: 17rem;
+  margin-left: 50%;
+}
+.down_arrow {
+  color: #fff;
+  font-family: FontAwesome;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.28125rem;
+  position: absolute;
+}
+#project {
+  margin-bottom: 10rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  width: 6.25rem;
+  height: 0.0625rem;
+  background: #2c4058;
+  margin-top: 100px;
+  text-align: center;
+}
+.project_title {
+  color: #2c4058;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+.project_top {
+  display: flex;
+  justify-content: space-between;
+}
+.top_left {
+  position: relative;
+}
+.top_img_background {
+  background-color: #55b7ff;
+  width: 36.5625rem;
+  height: 29.375rem;
+  position: absolute;
+  top: 5rem;
+}
+.top_img {
+  background-image: url(/images/joel-filipe-151697\ 1.png);
+  background-repeat: no-repeat;
+  width: 39.375rem;
+  height: 59.71125rem;
+  position: absolute;
+  top: 10rem;
+  left: 22rem;
+}
+.top_right {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-right: 350px;
+  margin-top: 250px;
+}
+.top_right_underTitle {
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+.top_right_title {
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.top_right_text {
+  width: 29.375rem;
+  height: 5.0625rem;
+  color: #2c4058;
+  font-family: Open Sans;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem; /* 166.667% */
+  margin-top: 15px;
+}
+.button {
+  width: 11.875rem;
+  height: 3.125rem;
+  background: #fff;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.top_right_textLocation {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 0.9375rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.top_right_textLocation::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url(/images/location_icon.png);
+  background-size: cover;
+  width: 0.55rem;
+  height: 0.9rem;
+}
+.project_bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15rem;
+}
+.bottom_left {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 22rem;
+  margin-top: 12rem;
+}
+.bottom_left_underTitle {
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+.bottom_left_title {
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.bottom_left_text {
+  width: 29.375rem;
+  height: 5.0625rem;
+  color: #2c4058;
+  font-family: Open Sans;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.875rem; /* 166.667% */
+  margin-top: 15px;
+}
+.bottom {
+  width: 11.875rem;
+  height: 3.125rem;
+  background: #fff;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-top: 25px;
+}
+.bottom_left_textLocation {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 0.9375rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 50px;
+}
+.bottom_left_textLocation::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  background-image: url(/images/location_icon.png);
+  background-size: cover;
+  width: 0.55rem;
+  height: 0.9rem;
+}
+.bottom_right {
+  position: relative;
+  display: flex;
+}
+.bottom_img_background {
+  width: 36.5625rem;
+  height: 29.375rem;
+  background-color: #7e5aff;
+}
+.bottom_img {
+  background-image: url(/images/photos-1284iH4Hjf4mhNgW\ 1.png);
+  background-repeat: no-repeat;
+  width: 39.375rem;
+  height: 29.375rem;
+  position: absolute;
+  top: 5rem;
+  right: 22rem;
+}
+#news {
+  background-image: url(/images/news_background.png);
+  background-color: rgb(84, 176, 243);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1064px;
+  padding-top: 5rem;
+}
+.news_title {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.75rem;
+  font-weight: 700;
+  padding-bottom: 5rem;
+}
+.news_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+.news_list_block {
+  width: 23.125rem;
+  height: 32.125rem;
+}
+.block_image1 {
+  background-image: url(/images/first_block_img.png);
+  background-repeat: no-repeat;
+  width: 23.125rem;
+  height: 15.02rem;
+}
+.block_title {
+  width: 20.625rem;
+  height: 3.125rem;
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+.block_text {
+  width: 20.625rem;
+  height: 3.125rem;
+  color: #2c4058;
+  font-family: Open Sans;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+.block_source {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.block_source_img1 {
+  background-image: url(/images/block_source_img1.png);
+  background-repeat: no-repeat;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.block_source_img2 {
+  background-image: url(/images/block_source_img2.png);
+  background-repeat: no-repeat;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.block_source_img3 {
+  background-image: url(/images/block_source_img3.png);
+  background-repeat: no-repeat;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.block_container {
+  background-color: #fff;
+  padding-left: 1rem;
+}
+.block_source_log {
+  margin-left: 2rem;
+}
+.source_log_name {
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.source_log_since {
+  color: #55b7ff;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.block_image1 {
+  background-image: url(/images/first_block_img.png);
+  background-repeat: no-repeat;
+  width: 23.125rem;
+  height: 15.02rem;
+}
+.block_image2 {
+  background-image: url(/images/second_block_img.png);
+  background-repeat: no-repeat;
+  width: 23.125rem;
+  height: 15.02rem;
+}
+.block_image3 {
+  background-image: url(/images/third_block_img.png);
+  background-repeat: no-repeat;
+  width: 23.125rem;
+  height: 15.02rem;
+}
+.block_title {
+  width: 20.625rem;
+  height: 3.125rem;
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+.block_text {
+  width: 20.625rem;
+  height: 3.125rem;
+  color: #2c4058;
+  font-family: Open Sans;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding-top: 2rem;
+}
+.block_source {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.block_source_img1 {
+  background-image: url(/images/block_source_img1.png);
+  background-repeat: no-repeat;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.block_container {
+  background-color: #fff;
+  padding-left: 1rem;
+}
+.block_source_log {
+  margin-left: 2rem;
+}
+.source_log_name {
+  color: #2c4058;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.source_log_since {
+  color: #55b7ff;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.left_arrow {
+  position: absolute;
+  right: 105rem;
+  top: -5%;
+}
+.right_arrow {
+  position: absolute;
+  left: 102rem;
+  top: -5%;
+}
+#gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+.gallery_title {
+  color: #2c4058;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2.75rem;
+  font-weight: 700;
+  padding-bottom: 5rem;
+}
+.gallery_images {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 0 23rem;
+  padding-bottom: 5rem;
+}
+.main_image {
+  grid-column: 1 / 2;
+  grid-row: span 2;
+}
+.right_side_images {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+}
+#footer {
+  background-image: /*linear-gradient(243deg, #7e5aff 16.9%, #55b7ff 83.27%),*/ url(/images/footer_background.png);
+  background-color: rgb(46, 151, 226);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+}
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+.footer_logo {
+  width: 15.0625rem;
+  height: 3.375rem;
+}
+.footer_social {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+.copyright {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-left: 32rem;
+}
+#map {
+  width: 100%;
+}
