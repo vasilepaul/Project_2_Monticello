@@ -28,6 +28,10 @@ header {
   font-style: normal;
   font-weight: 400;
 }
+.menu_list li:hover {
+  color: #bdcfd1;
+  cursor: pointer;
+}
 #menu_social {
   display: flex;
   justify-content: space-around;
@@ -95,7 +99,7 @@ h1 {
   letter-spacing: 0.28125rem;
   position: absolute;
 }
-#project {
+#projects {
   margin-bottom: 10rem;
   background: #fff;
   display: flex;
@@ -177,6 +181,12 @@ hr {
   font-size: 0.875rem;
   font-weight: 400;
   margin-top: 25px;
+}
+.button:hover,
+.button:focus {
+  background-color: #aaa9a7;
+  color: #fff;
+  cursor: pointer;
 }
 .top_right_textLocation {
   color: #000;
@@ -453,7 +463,7 @@ hr {
   left: 102rem;
   top: -5%;
 }
-#gallery {
+.gallery {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -516,5 +526,6 @@ hr {
   margin-left: 32rem;
 }
 #map {
+  height: 600px;
   width: 100%;
 }
