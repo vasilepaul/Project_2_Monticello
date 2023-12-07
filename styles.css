@@ -1,6 +1,9 @@
 body {
-  margin: 0;
-  width: 100%;
+  max-width: 2009px; /* Limita maximă de lățime a containerului */
+  min-width: 800px; /* Limita minimă de lățime a containerului */
+  width: 100%; /* Asigură ca containerul să ocupe întotdeauna între min-width și max-width */
+  margin: 0 auto; /* Centrare a containerului pe pagină */
+  /* Alte stiluri pentru container */
 }
 header {
   background-image: /* linear-gradient(243deg, #7e5aff 16.9%, #55b7ff 83.27%), */ url(/images/header_background.png);
@@ -140,14 +143,14 @@ hr {
   width: 39.375rem;
   height: 59.71125rem;
   position: absolute;
-  top: 10rem;
-  left: 22rem;
+  top: 9rem;
+  left: 5rem;
 }
 .top_right {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-right: 350px;
+  margin-right: 12rem;
   margin-top: 250px;
 }
 .top_right_underTitle {
@@ -214,7 +217,7 @@ hr {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-left: 22rem;
+  margin-left: 10rem;
   margin-top: 12rem;
 }
 .bottom_left_underTitle {
@@ -282,7 +285,7 @@ hr {
   height: 29.375rem;
   position: absolute;
   top: 5rem;
-  right: 22rem;
+  right: 5rem;
 }
 #news {
   background-image: url(/images/news_background.png);
@@ -300,35 +303,57 @@ hr {
   font-weight: 700;
   padding-bottom: 5rem;
 }
-.news_list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  position: relative;
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
 }
-.news_list_block {
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+}
+.swiper-slide {
+  background-color: #fff;
   width: 23.125rem;
   height: 32.125rem;
 }
-.block_image1 {
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card-img {
+  position: relative;
+  width: 100%;
+  height: 15.02rem;
+  padding: 3px;
+  box-sizing: border-box;
+}
+.card-image1 {
   background-image: url(/images/first_block_img.png);
   background-repeat: no-repeat;
-  width: 23.125rem;
-  height: 15.02rem;
+  background-size: cover;
+}
+.card-image2 {
+  background-image: url(/images/second_block_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-image3 {
+  background-image: url(/images/third_block_img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .block_title {
-  width: 20.625rem;
-  height: 3.125rem;
   color: #2c4058;
   font-family: Montserrat;
   font-size: 1.375rem;
   font-weight: 700;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 .block_text {
-  width: 20.625rem;
-  height: 3.125rem;
   color: #2c4058;
   font-family: Open Sans;
   font-size: 1.125rem;
@@ -338,36 +363,26 @@ hr {
 .block_source {
   display: flex;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
-.block_source_img1 {
-  background-image: url(/images/block_source_img1.png);
-  background-repeat: no-repeat;
+.icon_source_img {
   width: 3.75rem;
   height: 3.75rem;
   border-radius: 50%;
   overflow: hidden;
+}
+.block_source_img1 {
+  background-image: url(/images/block_source_img1.png);
+  background-repeat: no-repeat;
 }
 .block_source_img2 {
   background-image: url(/images/block_source_img2.png);
   background-repeat: no-repeat;
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 50%;
-  overflow: hidden;
 }
 .block_source_img3 {
   background-image: url(/images/block_source_img3.png);
   background-repeat: no-repeat;
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.block_container {
-  background-color: #fff;
-  padding-left: 1rem;
 }
 .block_source_log {
   margin-left: 2rem;
@@ -384,84 +399,38 @@ hr {
   font-size: 0.875rem;
   font-weight: 400;
 }
-.block_image1 {
-  background-image: url(/images/first_block_img.png);
-  background-repeat: no-repeat;
-  width: 23.125rem;
-  height: 15.02rem;
+.swiper-navBtn {
+  color: #ffffff;
+  transition: color 0.3s ease;
 }
-.block_image2 {
-  background-image: url(/images/second_block_img.png);
-  background-repeat: no-repeat;
-  width: 23.125rem;
-  height: 15.02rem;
+.swiper-navBtn:hover {
+  color: #ffffff;
 }
-.block_image3 {
-  background-image: url(/images/third_block_img.png);
-  background-repeat: no-repeat;
-  width: 23.125rem;
-  height: 15.02rem;
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
 }
-.block_title {
-  width: 20.625rem;
-  height: 3.125rem;
-  color: #2c4058;
-  font-family: Montserrat;
-  font-size: 1.375rem;
-  font-weight: 700;
-  padding-top: 2rem;
+.swiper-button-next {
+  right: 0;
 }
-.block_text {
-  width: 20.625rem;
-  height: 3.125rem;
-  color: #2c4058;
-  font-family: Open Sans;
-  font-size: 1.125rem;
-  font-weight: 400;
-  padding-top: 2rem;
+.swiper-button-prev {
+  left: 0;
 }
-.block_source {
-  display: flex;
-  align-items: center;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
+.swiper-pagination-bullet {
+  background-color: #ffffff;
+  opacity: 1;
 }
-.block_source_img1 {
-  background-image: url(/images/block_source_img1.png);
-  background-repeat: no-repeat;
-  width: 3.75rem;
-  height: 3.75rem;
-  border-radius: 50%;
-  overflow: hidden;
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
 }
-.block_container {
-  background-color: #fff;
-  padding-left: 1rem;
-}
-.block_source_log {
-  margin-left: 2rem;
-}
-.source_log_name {
-  color: #2c4058;
-  font-family: Montserrat;
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-.source_log_since {
-  color: #55b7ff;
-  font-family: Montserrat;
-  font-size: 0.875rem;
-  font-weight: 400;
-}
-.left_arrow {
-  position: absolute;
-  right: 105rem;
-  top: -5%;
-}
-.right_arrow {
-  position: absolute;
-  left: 102rem;
-  top: -5%;
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
 }
 .gallery {
   display: flex;
@@ -484,8 +453,9 @@ hr {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
-  margin: 0 23rem;
+  margin: 0 8rem;
   padding-bottom: 5rem;
+  max-width: 100%;
 }
 .main_image {
   grid-column: 1 / 2;
@@ -495,6 +465,7 @@ hr {
   grid-column: 2 / -1;
   grid-row: 1 / -1;
 }
+
 #footer {
   background-image: /*linear-gradient(243deg, #7e5aff 16.9%, #55b7ff 83.27%),*/ url(/images/footer_background.png);
   background-color: rgb(46, 151, 226);
@@ -523,7 +494,7 @@ hr {
   font-family: Montserrat;
   font-size: 0.875rem;
   font-weight: 400;
-  margin-left: 32rem;
+  margin-left: 28rem;
 }
 #map {
   height: 600px;

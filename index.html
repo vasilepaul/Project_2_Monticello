@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monticello</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
 
 <body>
@@ -74,55 +75,65 @@
     <div id="news">
         <hr>
         <h2 class="news_title">LATEST NEWS</h2>
-        <div class="news_list">
-            <div class="left_arrow"><a class="conteiner_arrow" href=""><img src="/images/arrow_left.png"></a>
-            </div>
-            <div class="news_list_block">
-                <div class="block_image1"></div>
-                <div class="block_container">
-                    <div class="block_title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</div>
-                    <div class="block_text">Free directories: directories are perfect for customers that are searching
-                        for...</div>
-                    <div class="block_source">
-                        <div class="block_source_img1"></div>
-                        <div class="block_source_log">
-                            <div class="source_log_name">ALJA BRUN</div>
-                            <div class="source_log_since">20 Jan 2020</div>
-                        </div>
-                    </div>
-                </div>
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
 
-            </div>
-            <div class="news_list_block">
-                <div class="block_image2"></div>
-                <div class="block_container">
-                    <div class="block_title">EFFECTIVE ADVERTISING POINTERS.</div>
-                    <div class="block_text">Having a home based business is a wonderful asset to your life...</div>
-                    <div class="block_source">
-                        <div class="block_source_img2"></div>
-                        <div class="block_source_log">
-                            <div class="source_log_name">DOMINIC FREEMAN</div>
-                            <div class="source_log_since">13 Dec 2019</div>
+                    <div class="swiper-slide">
+                        <div class="card-img card-image1"></div>
+
+                        <div class="card-content">
+                            <div class="block_title">SEE THE UNMATCHED BEAUTY OF THE GREAT.</div>
+                            <div class="block_text">Free directories: directories are perfect for customers that are
+                                searching
+                                for...</div>
+                            <div class="block_source">
+                                <div class="icon_source_img block_source_img1"></div>
+                                <div class="block_source_log">
+                                    <div class="source_log_name">ALJA BRUN</div>
+                                    <div class="source_log_since">20 Jan 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-img card-image2"></div>
+
+                        <div class="card-content">
+                            <div class="block_title">EFFECTIVE ADVERTISING POINTERS.</div>
+                            <div class="block_text">Having a home based business is a wonderful asset to your life...
+                            </div>
+                            <div class="block_source">
+                                <div class="icon_source_img block_source_img2"></div>
+                                <div class="block_source_log">
+                                    <div class="source_log_name">DOMINIC FREEMAN</div>
+                                    <div class="source_log_since">13 Dec 2019</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="card-img card-image3"></div>
+
+                        <div class="card-content">
+                            <div class="block_title">HYPNOTIZE YOURSELF INTO THE GHOST.</div>
+                            <div class="block_text">There are many things that are important to catalog design...</div>
+                            <div class="block_source">
+                                <div class="icon_source_img block_source_img3"></div>
+                                <div class="block_source_log">
+                                    <div class="source_log_name">ALICE WARD</div>
+                                    <div class="source_log_since">30 Nov 2019</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="news_list_block">
-                <div class="block_image3"></div>
-                <div class="block_container">
-                    <div class="block_title">HYPNOTIZE YOURSELF INTO THE GHOST.</div>
-                    <div class="block_text">There are many things that are important to catalog design...</div>
-                    <div class="block_source">
-                        <div class="block_source_img3"></div>
-                        <div class="block_source_log">
-                            <div class="source_log_name">ALICE WARD</div>
-                            <div class="source_log_since">30 Nov 2019</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="right_arrow"><a class="conteiner_arrow" href=""><img src="/images/arrow_right.png"></a>
-            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     <div id="about us" class="gallery">
@@ -169,6 +180,7 @@
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnukTVcsqaady8OewFd3_Rvw7eCG_eBwI&region=GB&callback=initMap">
         </script>
+    <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 
